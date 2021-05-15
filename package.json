@@ -5,7 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "yarn workspace @lerna-monorepo/core-app dev"
+    "start": "yarn workspace @lerna-monorepo/core-app dev",
+    "clean": "lerna clean"
   },
   "devDependencies": {
     "lerna": "^4.0.0",

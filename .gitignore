@@ -6,3 +6,5 @@
 .pnp.*
 
 .vscode/
+dist
+node_modules
