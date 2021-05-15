@@ -22,3 +22,8 @@
 - Vite app initiliazed with `yarn create @vite/app core-app --template react-ts`
 - `yarn add @lerna-monorepo/button` links the button package to the core-app
 - The button can be used in the Vite app without further configuration since [Vite is able to handle linked-deps on its own](https://vitejs.dev/guide/dep-pre-bundling.html#monorepos-and-linked-dependencies)
+
+
+## Resources
+- https://github.com/alejandroq/vite-react-typescript-monorepo
+- [Chakra is a good example of monorepo](https://github.com/chakra-ui/chakra-ui)
