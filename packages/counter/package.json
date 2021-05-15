@@ -1,0 +1,15 @@
+{
+  "name": "@lerna-monorepo/counter",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "@lerna-monorepo/button": "workspace:packages/button",
+    "@types/react": "^17.0.5",
+    "react": "^17.0.2",
+    "typescript": "^4.2.4"
+  }
+}

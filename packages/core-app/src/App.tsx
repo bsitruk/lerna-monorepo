@@ -1,14 +1,14 @@
+import { Counter } from "@lerna-monorepo/counter";
 import React, { useState } from "react";
-import { Button } from "@lerna-monorepo/button";
-import logo from "./logo.svg";
 import "./App.css";
+import logo from "./logo.svg";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <Button></Button>
+      <Counter />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>

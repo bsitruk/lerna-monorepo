@@ -7,7 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@lerna-monorepo/button": "0.0.0",
+    "@lerna-monorepo/counter": "workspace:packages/counter",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
