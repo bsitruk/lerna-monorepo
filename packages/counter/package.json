@@ -7,7 +7,7 @@
     "tsc": "tsc"
   },
   "dependencies": {
-    "@lerna-monorepo/button": "workspace:packages/button",
+    "@lerna-monorepo/button": "^0.0.0",
     "@types/react": "^17.0.5",
     "react": "^17.0.2",
     "typescript": "^4.2.4"

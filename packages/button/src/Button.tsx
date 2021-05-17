@@ -5,7 +5,7 @@ export type ButtonProps = {
   text?: string;
 };
 export const Button: React.FC<ButtonProps> = ({ onClick, text = "" }) => {
-  return <button onClick={onClick}>OK {text}</button>;
+  return <button onClick={onClick}>OKI {text}</button>;
 };
 
 export default Button;

@@ -273,7 +273,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lerna-monorepo/button@workspace:packages/button":
+"@cush/relative@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@cush/relative@npm:1.0.0"
+  checksum: 0c32324a65a2c3c6068db63cc246bccafed6ef7277412460726337d3bc9b2fdc656836ca1d4c34fe0567b26131a25eec6d02cbcbc472ed813954f984684e7e23
+  languageName: node
+  linkType: hard
+
+"@lerna-monorepo/button@^0.0.0, @lerna-monorepo/button@workspace:packages/button":
   version: 0.0.0-use.local
   resolution: "@lerna-monorepo/button@workspace:packages/button"
   dependencies:
@@ -295,6 +302,7 @@ __metadata:
     react-dom: ^17.0.0
     typescript: ^4.1.2
     vite: ^2.2.3
+    vite-tsconfig-paths: ^3.3.11
   languageName: unknown
   linkType: soft
 
@@ -302,7 +310,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@lerna-monorepo/counter@workspace:packages/counter"
   dependencies:
-    "@lerna-monorepo/button": "workspace:packages/button"
+    "@lerna-monorepo/button": ^0.0.0
     "@types/react": ^17.0.5
     react: ^17.0.2
     typescript: ^4.2.4
@@ -1344,6 +1352,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/json5@npm:^0.0.29":
+  version: 0.0.29
+  resolution: "@types/json5@npm:0.0.29"
+  checksum: 66e9ac0143ec521522c7bb670301e9836ee886207eeed1aab6d4854a1b19b404ab3a54cd8d449f9b1f13acc357f540be96f8ac2d1e86e301eab52ae0f9a4066f
+  languageName: node
+  linkType: hard
+
 "@types/minimatch@npm:^3.0.3":
   version: 3.0.4
   resolution: "@types/minimatch@npm:3.0.4"
@@ -2232,7 +2247,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.1.0":
+"debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.1.1":
   version: 4.3.2
   resolution: "debug@npm:4.3.2"
   dependencies:
@@ -2896,6 +2911,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"glob-regex@npm:^0.3.0":
+  version: 0.3.2
+  resolution: "glob-regex@npm:0.3.2"
+  checksum: 82b00bb450d766fbd5c4bbee48ac215ef0c9f7349de15e204a93ad66124f78186f31e0f37b85a6c22de3092c1fe36a684254964146fb4b34aeb6176e023cdc8c
+  languageName: node
+  linkType: hard
+
 "glob@npm:^7.0.0, glob@npm:^7.1.1, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
   version: 7.1.7
   resolution: "glob@npm:7.1.7"
@@ -2928,6 +2950,13 @@ fsevents@~2.3.1:
     merge2: ^1.3.0
     slash: ^3.0.0
   checksum: f17da0f869918656ec8c16c15ad100f025fbd13e4c157286cf340811eb1355a7d06dde77be1685a7a051970ec6abeff96a9b2a1a97525f84bc94fbd518c1d1db
+  languageName: node
+  linkType: hard
+
+"globrex@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "globrex@npm:0.1.2"
+  checksum: 78825a08abba1994cc3f79a3812a627cf22ac676b08e3b812a7c284af47d39d4dcddff6ac811cb994e817949df1ea53a17c13aa561d9c265b4d3fc34b7362990
   languageName: node
   linkType: hard
 
@@ -3572,6 +3601,17 @@ fsevents@~2.3.1:
   version: 5.0.1
   resolution: "json-stringify-safe@npm:5.0.1"
   checksum: 261dfb8eb3e72c8b0dda11fd7c20c151ffc1d1b03e529245d51708c8dd8d8c6a225880464adf41a570dff6e5c805fd9d1f47fed948cfb526e4fbe5a67ce4e5f4
+  languageName: node
+  linkType: hard
+
+"json5@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "json5@npm:1.0.1"
+  dependencies:
+    minimist: ^1.2.0
+  bin:
+    json5: lib/cli.js
+  checksum: df41624f9f40bfacc546f779eef6d161a3312fbb6ec1dbd69f8c4388e9807af653b753371ab19b6d2bab22af2ca7dde62fe03c791596acf76915e1fc4ee6fd88
   languageName: node
   linkType: hard
 
@@ -5217,6 +5257,18 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"recrawl-sync@npm:^2.0.3":
+  version: 2.2.1
+  resolution: "recrawl-sync@npm:2.2.1"
+  dependencies:
+    "@cush/relative": ^1.0.0
+    glob-regex: ^0.3.0
+    slash: ^3.0.0
+    tslib: ^1.9.3
+  checksum: e91561a0b181d1c36944356f69452563f1a5c4667e0ba85793db38c124e5672eef7b0c481ff48c3b2f23fa6c8e7733e76f3199dacca1e857103ad09e2fbdc542
+  languageName: node
+  linkType: hard
+
 "redent@npm:^1.0.0":
   version: 1.0.0
   resolution: "redent@npm:1.0.0"
@@ -6027,7 +6079,19 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"tslib@npm:^1.9.0":
+"tsconfig-paths@npm:^3.9.0":
+  version: 3.9.0
+  resolution: "tsconfig-paths@npm:3.9.0"
+  dependencies:
+    "@types/json5": ^0.0.29
+    json5: ^1.0.1
+    minimist: ^1.2.0
+    strip-bom: ^3.0.0
+  checksum: 5383ba626b3ac70e08094b9dfd1e30ce82878407b6c8db8cd84279cc7c7340d5f53f67dbeb8174a233c082a068322a6b00ec8514b96d9a80a453e0476dc116d2
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^1.9.0, tslib@npm:^1.9.3":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: f44fe7f216946b17d3e3074df3746372703cf24e9127b4c045511456e8e4bf25515fb0a1bb3937676cc305651c5d4fcb6377b0588a4c6a957e748c4c28905d17
@@ -6256,6 +6320,20 @@ fsevents@~2.3.1:
     core-util-is: 1.0.2
     extsprintf: ^1.2.0
   checksum: 38ea80312cb42e5e8b4ac562d108d675b2354a79f8f125d363671f692657461b9181fd26f4fc9acdca433f8afee099cb78058806e1303e6b15b8fb022affba94
+  languageName: node
+  linkType: hard
+
+"vite-tsconfig-paths@npm:^3.3.11":
+  version: 3.3.11
+  resolution: "vite-tsconfig-paths@npm:3.3.11"
+  dependencies:
+    debug: ^4.1.1
+    globrex: ^0.1.2
+    recrawl-sync: ^2.0.3
+    tsconfig-paths: ^3.9.0
+  peerDependencies:
+    vite: ">2.0.0-0"
+  checksum: e79b1cc93a9cf7fc6ad9fb2edf89d1e560732fadec8e4a2164fd51ba0ab849b04f1081cdb869ec340aab500d535bbb0e452c8fecfa2a87f77a9e9447dac2d918
   languageName: node
   linkType: hard
 
