@@ -10,12 +10,21 @@
 
 ### root/
 - Contains some default configuration such as `tsconfig, eslint...`
+- The `tsconfig` should contain the `paths` aliases
 
 ### packages/button
 - Package containing a `Button.jsx` component
 - Regular node package intialized with `yarn init`
 - Update the `package.json (name, version, main, types)` fields
-- `tsconfig.json` extends the default config
+- `tsconfig.json` extends the default config, and add the `composite` option
+- `yarn tsc` compiles the code
+
+### packages/counter
+- Package containing a `Counter.jsx` component
+- Regular node package intialized with `yarn init`
+- Update the `package.json (name, version, main, types)` fields
+- `yarn add @lerna-monorepo/button` (first run `yarn install` to generate symlink of local packages)
+- `tsconfig.json` extends the default config, and add `references` pointing to the button/ package
 - `yarn tsc` compiles the code
 
 ### packages/core-app
@@ -26,4 +35,5 @@
 
 ## Resources
 - https://github.com/alejandroq/vite-react-typescript-monorepo
+- https://github.com/jaredpalmer/tsdx-monorepo
 - [Chakra is a good example of monorepo](https://github.com/chakra-ui/chakra-ui)
