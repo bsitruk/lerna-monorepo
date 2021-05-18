@@ -1,11 +1,8 @@
 {
   "extends": "./tsconfig.default",
-  "include": ["packages"],
-  "compilerOptions": {
-    "baseUrl": "packages",
-    "paths": {
-      "@lerna-monorepo/button": ["button/src"],
-      "@lerna-monorepo/counter": ["counter/src"]
-    }
-  }
+  "files": [],
+  "references": [
+    { "path": "./packages/button" },
+    { "path": "./packages/counter" }
+  ]
 }

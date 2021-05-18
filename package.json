@@ -6,7 +6,8 @@
   ],
   "scripts": {
     "start": "yarn workspace @lerna-monorepo/core-app dev",
-    "clean": "lerna clean"
+    "clean": "tsc -b --clean",
+    "tsc": "tsc -b"
   },
   "devDependencies": {
     "lerna": "^4.0.0",
